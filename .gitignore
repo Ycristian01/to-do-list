@@ -54,3 +54,4 @@
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 /backend-todo-list/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+/backend-todo-list/postgres-data
