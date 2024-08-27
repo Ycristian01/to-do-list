@@ -55,3 +55,27 @@
 # Diagnostic reports (https://nodejs.org/api/report.html)
 /backend-todo-list/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 /backend-todo-list/postgres-data
+
+# front-end
+
+# dependencies
+/frontend-todo-list/node_modules
+/frontend-todo-list/.pnp
+/frontend-todo-list/.pnp.js
+
+# testing
+/frontend-todo-list/coverage
+
+# production
+/frontend-todo-list/build
+
+# misc
+/frontend-todo-list/.DS_Store
+/frontend-todo-list/.env.local
+/frontend-todo-list/.env.development.local
+/frontend-todo-list/.env.test.local
+/frontend-todo-list/.env.production.local
+
+/frontend-todo-list/npm-debug.log*
+/frontend-todo-list/yarn-debug.log*
+/frontend-todo-list/yarn-error.log*
