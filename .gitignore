@@ -59,23 +59,37 @@
 # front-end
 
 # dependencies
-/frontend-todo-list/node_modules
-/frontend-todo-list/.pnp
-/frontend-todo-list/.pnp.js
+/front-end-todo-list/node_modules
+/front-end-todo-list/.pnp
+/front-end-todo-list/.pnp.js
+/front-end-todo-list/.yarn/install-state.gz
 
 # testing
-/frontend-todo-list/coverage
+/front-end-todo-list/coverage
+
+# next.js
+/front-end-todo-list/.next/
+/front-end-todo-list/out/
 
 # production
-/frontend-todo-list/build
+/front-end-todo-list/build
 
 # misc
-/frontend-todo-list/.DS_Store
-/frontend-todo-list/.env.local
-/frontend-todo-list/.env.development.local
-/frontend-todo-list/.env.test.local
-/frontend-todo-list/.env.production.local
+/front-end-todo-list/.DS_Store
+/front-end-todo-list/*.pem
 
-/frontend-todo-list/npm-debug.log*
-/frontend-todo-list/yarn-debug.log*
-/frontend-todo-list/yarn-error.log*
+# debug
+/npm-debug.log*
+/front-end-todo-list/yarn-debug.log*
+/front-end-todo-list/yarn-error.log*
+
+# local env files
+/front-end-todo-list/.env*.local
+
+# vercel
+/front-end-todo-list/.vercel
+
+# typescript
+/front-end-todo-list/*.tsbuildinfo
+/front-end-todo-list/next-env.d.ts
+
