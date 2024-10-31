@@ -8,7 +8,7 @@ import { CreateUserDto } from '../dtos/user.dto';
 export class UsersService {
   constructor(
     @InjectRepository(User)
-    private userRepository: Repository<User>,
+    private readonly userRepository: Repository<User>,
   ) {}
 
   async create(body: CreateUserDto): Promise<User> {
@@ -18,8 +18,11 @@ export class UsersService {
   }
 
   async findAll(): Promise<User[]> {
-    const users = await this.userRepository.find();
-    return this.userRepository.find();
+    return this.userRepository.find({
+      relations: {
+        tasks: true,
+      },
+    });
   }
 
   async findOne(id: number): Promise<User> {
